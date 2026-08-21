@@ -7,8 +7,10 @@
   </head>
   <body>
     <header>
-      <h1>GameHub</h1>
-      <p><b>Discover. Play. Review.</b></p>
+      <hgroup>
+        <h1>GameHub</h1>
+        <p><b>Discover. Play. Review.</b></p>
+      </hgroup>
       <p>
         <mark>GameHub</mark> is a simple platform for discovering popular games,
         comparing ratings, reading reviews, and sharing your own gaming
@@ -17,13 +19,13 @@
 
       <nav>
         <a href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">Reviews</a>
-        <a href="#">Submit Review</a>
+        <a href="#games">Games</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#submit-review">Submit Review</a>
       </nav>
     </header>
     <main>
-      <section>
+      <section id="games">
         <h2>Featured Games</h2>
         <h3>Minecraft</h3>
         <img
@@ -35,11 +37,13 @@
           <b>Description:</b> A sandbox game where players explore, build,
           craft, and survive in an open-ended virtual worlds made of blocks.
         </p>
+
+        <iframe src="https://en.wikipedia.org/wiki/Minecraft_(franchise)" title="Minecraft information wikipedia" height="500" width="70%"></iframe>
         <a
           href="https://www.minecraft.net/en-us?utm_source=chatgpt.com"
           target="_blank"
           rel="noopener noreferrer"
-          >Learn More</a
+          >Official Minecraft website</a
         >
         <hr />
         <h3>Valorant</h3>
@@ -49,6 +53,10 @@
           compete in. A competitive tactical shooter focused on teamwork,
           precise gunplay, and unique agent abilities.
         </p>
+
+        <iframe src="https://en.wikipedia.org/wiki/Valorant" title="Valorant information wikipedia" height="500" width="70%"></iframe>
+        
+        
         <hr />
 
         <h3>GTA V</h3>
@@ -58,6 +66,9 @@
           fictional state of San Andreas, where players can explore the city,
           complete missions, and engage in various activities.
         </p>
+
+         <iframe src="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V" title="GTA V information wikipedia" height="500" width="70%"></iframe>
+        
         <hr />
 
         <h3>EA Sports FC 26</h3>
@@ -71,6 +82,9 @@
           experience realistic football matches, manage teams, and compete in
           various leagues and tournaments.
         </p>
+
+        <iframe src="https://en.wikipedia.org/wiki/EA_Sports_FC_26" title="EA FC 26 information wikipedia" height="500" width="70%"></iframe>
+        
         <hr />
 
         <h3>Hollow Knight</h3>
@@ -84,6 +98,10 @@
           control a small insect-like character named Hollow Knight, exploring a
           vast underground world filled with secrets and challenges.
         </p>
+
+        <iframe src="https://en.wikipedia.org/wiki/Hollow_Knight" title="Hollow Knight information wikipedia" height="500" width="70%"></iframe>
+        
+        
         <hr />
       </section>
 
@@ -142,8 +160,9 @@
           </tbody>
         </table>
       </section>
+      <hr>
 
-      <section>
+      <section id="reviews">
         <h2>Reviews</h2>
 
         <article>
@@ -180,6 +199,7 @@
           </p>
         </article>
       </section>
+      <hr>
 
       <section>
         <h2>Gaming Media</h2>
@@ -289,8 +309,8 @@
         <hr />
       </section>
 
-        <h2>Editor's Note</h2>
         <aside>
+          <h2>Editor's Note</h2>
           <p>
             <b>Notice:</b>Game ratings on GameHub are illustrative and represent
             community-style scores for this practice project. They are not
@@ -299,7 +319,7 @@
         
       
 
-      <section>
+      <section id="submit-review">
         <h2>Submit Review</h2>
         <form action="#" method="post">
           <label for="full-name">Full Name:</label>
@@ -336,6 +356,7 @@
             <option value="nintendo-switch">Nintendo Switch</option>
           </select>
           <br />
+          
 
           <label for="rating">Rating:</label>
           <select id="rating" name="rating" required>
